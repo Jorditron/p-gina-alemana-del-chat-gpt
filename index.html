@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profesor de Español | Clases Online</title>
+  <style>
+    :root {
+      --primary: #c2410c;
+      --secondary: #f97316;
+      --bg: #fff7ed;
+      --text: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--primary); }
+    .hero {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero p { font-size: 1.1rem; }
+    .button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.6rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.8rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .card h3 { margin-top: 0; }
+    .contact {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    footer {
+      background: #431407;
+      color: #fed7aa;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Spanischlehrer</strong>
+      <div>
+        <a href="#inicio">Anfang</a>
+        <a href="#servicios">Kurse</a>
+        <a href="#metodo">Methode</a>
+        <a href="#contacto">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div>
+      <h1>Lerne Spanisch auf klare, praktische und natürliche Weise</h1>
+      <p>Ich bin Spanischlehrer und helfe Schülern aller Niveaustufen dabei, sich selbstbewusst zu verständigen, sei es für die Arbeit, das Studium oder auf Reisen.</p>
+      <a class="button" href="#contacto">Buchen Sie eine Probestunde</a>
+    </div>
+    <div>
+      <ul>
+        <li>✔ Individuell angepasste Online-Kurse</li>
+        <li>✔ Spanisch für Anfänger und Fortgeschrittene</li>
+        <li>✔ Konversation, Grammatik und Wortschatz</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="servicios">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Einzelunterricht</h3>
+        <p>100 % individuell auf dein Niveau, deine Ziele und dein Lerntempo zugeschnittene Sitzungen.</p>
+      </div>
+      <div class="card">
+        <h3>Spanisch für Konversation</h3>
+        <p>Verbessern Sie Ihre Sprachgewandtheit und Aussprache durch echte und dynamische Gespräche.</p>
+      </div>
+      <div class="card">
+        <h3>Spanisch für Reisen oder Arbeit</h3>
+        <p>Lerne die Vokabeln und Ausdrücke, die du wirklich brauchst.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="metodo">
+    <h2>Meine Methode</h2>
+    <p>Ich arbeite mit einem kommunikativen und praktischen Ansatz. Der Unterricht wird an Ihre Interessen angepasst und ich verwende reale Beispiele, damit Sie vom ersten Tag an lernen, Spanisch anzuwenden.</p>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Kontakt</h2>
+    <div class="contact">
+      <p>Möchten Sie weitere Informationen oder einen Unterricht buchen?</p>
+      <p><strong>Email:</strong> spanischlehrerjordi@gmail.com</p>
+      <p><strong>WhatsApp:</strong> +34 604 546 245</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Spanischlehrer · Online-Unterricht</p>
+  </footer>
+</body>
+</html>
